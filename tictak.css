@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+.color-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+
 
 h2 {
     display: inline;
@@ -12,6 +19,7 @@ h2 {
     color: aliceblue;
     width: 200px;
     height:200px;
+    
 }
 
 .red {
@@ -20,6 +28,7 @@ h2 {
     color: aliceblue;
     width: 200px;
     height:200px;
+    order: 4;
 }
 
 .green {
@@ -28,6 +37,7 @@ h2 {
     color: aliceblue;
     width: 200px;
     height:200px;
+    order: 2;
 }
 
 
@@ -37,6 +47,7 @@ h2 {
     color: aliceblue;
     width: 200px;
     height:200px;
+    order: 1;
 }
 
 .orange {
@@ -45,10 +56,32 @@ h2 {
     color: aliceblue;
     width: 200px;
     height:200px;
+    order: 3;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    width: 0;
+    /* grid-template-rows: ; */
+}
+
+.white {
+    height: 100px;
+    width: 100px;
+    background: antiquewhite;
+    margin: 0;
+}
+.black {
+    height: 100px;
+    width: 100px;
+    background: rgb(185, 132, 63);
+    margin: 0;
 }
 
 p {
-    font-size: 40px;
+    font-size: 20px;
 }
 
 .try {
@@ -61,10 +94,55 @@ img{
     max-width: 40%;
     height: auto;
     size: 15px;
-    float: right;
-    
+    float: right; 
+}
+
+.grid-try {
+    display: grid;
+    grid-template-columns: auto 400px minmax(200px, 500px);
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+
+}
+.grid-container {
+    height: 100vh;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.expands {
+    background: #15dba0;  
+}
+.item {
+    font-size: 5rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(57, 57, 243);
 }
 
 h3 {
     clear: right;
+}@media (min-width: 400px) {
+    body {
+        background: rgb(255, 225, 0);
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        background: #00ffb3;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        background: rgb(80, 75, 75);
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        background: rgb(23, 116, 34);
+    }
 }
