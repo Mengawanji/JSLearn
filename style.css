@@ -1,0 +1,28 @@
+
+* {
+    padding: 0.3rem;
+}
+
+
+body {
+    background: rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    height: 100vh;
+    padding: 10px;
+
+
+}
+
+.auth-container {
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    padding: 30px 30px;
+    border-radius: 10px;
+
+}
+
